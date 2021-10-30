@@ -41,7 +41,7 @@ export default function Header() {
             <Container maxWidth="md">
                 <Toolbar disableGutters>
                     <Avatar className={styles.avatar}>
-                        <CodeIcon style={{ fontSize: 32 }} />
+                        <CodeIcon />
                     </Avatar>
                     <Hidden xsDown>
                         {navigationLinks.map((item, index) => (

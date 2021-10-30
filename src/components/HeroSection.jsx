@@ -42,9 +42,7 @@ export default function HeroSection() {
     const styles = useStyles();
     const [shouldShow, setShouldShow] = useState(false);
     useEffect(() => {
-        setTimeout(() => {
-            setShouldShow(true);
-        }, 600);
+        setShouldShow(true);
     }, []);
     return (
         <Paper className={styles.section}>
@@ -52,10 +50,10 @@ export default function HeroSection() {
             <div className={styles.overlay}></div>
             <Container className={styles.container} maxWidth="md">
                 <Grid className={styles.content} container justifyContent="space-between" alignItems="center">
-                    <Zoom in={shouldShow}>
+                    <Zoom in={shouldShow} timeout={800}>
                         <Grid item sm={8}>
-                            <Typography component="h1" variant="h3">Hi, my name is Anthony Magana. I'm a software engineer</Typography>
-                            <Typography component="h2" variant="h5">I build web applications using modern JavaScript frameworks</Typography>
+                            <Typography component="h1" variant="h3">Hi, my name is Anthony Magana. I'm a Software Developer</Typography>
+                            <Typography component="h2" variant="h5">I am progress driven person who loves to create, develop, and collaborate with others. I have experience developing web applications using modern JavaScript frameworks.</Typography>
                             <Box my={2}>
                                 <Button href="mailto:anthonymagana0705@gmail.com" variant="outlined" color="secondary">Get in Touch!</Button>
                             </Box>
