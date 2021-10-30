@@ -42,7 +42,9 @@ export default function HeroSection() {
     const styles = useStyles();
     const [shouldShow, setShouldShow] = useState(false);
     useEffect(() => {
-        setShouldShow(true);
+        setTimeout(() => {
+            setShouldShow(true);
+        }, 600);
     }, []);
     return (
         <Paper className={styles.section}>
