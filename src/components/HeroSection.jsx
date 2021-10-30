@@ -13,7 +13,8 @@ import {StaticImage} from 'gatsby-plugin-image';
 
 const useStyles = makeStyles(theme => ({
     section: {
-        height: '90vh',
+        height: '95vh',
+        position: 'relative',
     },
     container: {
         height: '100%',
