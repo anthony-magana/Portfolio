@@ -31,6 +31,9 @@ const useStyles = makeStyles(theme => ({
         color: 'inherit',
         backgroundColor: 'inherit',
     },
+    codeIcon: {
+        fontSize: 32,
+    }
 }));
 
 export default function Header() {
@@ -41,7 +44,7 @@ export default function Header() {
             <Container maxWidth="md">
                 <Toolbar disableGutters>
                     <Avatar className={styles.avatar}>
-                        <CodeIcon />
+                        <CodeIcon className={styles.codeIcon} />
                     </Avatar>
                     <Hidden xsDown>
                         {navigationLinks.map((item, index) => (

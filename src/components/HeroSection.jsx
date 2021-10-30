@@ -52,8 +52,9 @@ export default function HeroSection() {
                 <Grid className={styles.content} container justifyContent="space-between" alignItems="center">
                     <Zoom in={shouldShow} timeout={800}>
                         <Grid item sm={8}>
-                            <Typography component="h1" variant="h3">Hi, my name is Anthony Magana. I'm a Software Developer</Typography>
-                            <Typography component="h2" variant="h5">I am progress driven person who loves to create, develop, and collaborate with others. I have experience developing web applications using modern JavaScript frameworks.</Typography>
+                            <Typography component="h1" variant="h2">Anthony Magana</Typography>
+                            <Typography component="h2" variant="h4" style={{paddingTop: 5, paddingBottom: 10}}>Software Developer</Typography>
+                            <Typography component="p" variant="body1">I am progress driven person who loves to create, develop, and collaborate with others. I have experience developing web applications using modern JavaScript frameworks.</Typography>
                             <Box my={2}>
                                 <Button href="mailto:anthonymagana0705@gmail.com" variant="outlined" color="secondary">Get in Touch!</Button>
                             </Box>
