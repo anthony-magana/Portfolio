@@ -13,6 +13,7 @@ import Divider from '@material-ui/core/Divider';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+import CodeIcon from '@material-ui/icons/Code';
 
 const navigationLinks = [
     {name: 'About', href: '#about'},
@@ -26,14 +27,9 @@ const useStyles = makeStyles(theme => ({
     },
     avatar: {
         marginRight: 'auto',
-        color: '#fff',
-        backgroundColor: 'black',
-        borderRadius: 0,
-        height: 30,
         padding: 15,
-        border: '2px solid gray',
-        borderLeft: '12px solid transparent',
-        borderRight: '12px solid transparent',
+        color: 'inherit',
+        backgroundColor: 'inherit',
     },
 }));
 
@@ -44,7 +40,9 @@ export default function Header() {
         <AppBar position="sticky" color="default">
             <Container maxWidth="md">
                 <Toolbar disableGutters>
-                    <Avatar className={styles.avatar}>AM</Avatar>
+                    <Avatar className={styles.avatar}>
+                        <CodeIcon style={{ fontSize: 32 }} />
+                    </Avatar>
                     <Hidden xsDown>
                         {navigationLinks.map((item, index) => (
                             <Link 
