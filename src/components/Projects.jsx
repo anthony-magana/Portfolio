@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
         width: '65%',
     },
     smallScreen: {
-        width: '150%',
+        width: '162%',
     }
 }));
 
