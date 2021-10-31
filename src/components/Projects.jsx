@@ -16,7 +16,7 @@ import Hidden from '@material-ui/core/Hidden';
 
 const useStyles = makeStyles((theme) => ({
     cardMedia: {
-        width: '50%',
+        width: '35%',
     },
     card: {
         display: 'flex',
@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
     tag: {
         marginRight: 5,
         marginBottom: 5,
+    },
+    cardContnent: {
+        width: '65%',
     }
 }));
 
@@ -46,7 +49,7 @@ const Project = ({ title, description, imageUrl, tags, links }) => {
     return (
       <Grid item>
         <Card className={styles.card}>
-          <div>
+          <div className={styles.cardContnent}>
             <CardContent>
               <Typography variant="h5" paragraph>
                 {title}
@@ -96,51 +99,47 @@ export default function Projects() {
 
 const projectData = [
     {
-        title: 'Project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-        imageUrl: 'https://source.unsplash.com/random/400x300',
-        tags: ['react', 'javascript', 'html', 'css'],
+        title: 'EONET Tracking',
+        description: `Single Page Application that utilizes NASA's EONET api for data on current live natural events happening around the world while also implementing the Google Maps api allowing user interaction with NASA's EONET data.`,
+        imageUrl: '/eonet.png',
+        tags: ['React', 'JavaScript', 'Google Maps API', 'NASA API'],
         links: [
             {
                 icon: GitHubIcon,
-                href: 'https://github.com/anthony-magana'
+                href: 'https://github.com/anthony-magana/EONET-Tracker/'
             },
             {
                 icon: OpenInNewIcon,
-                href: 'https://anthonymagana.netlify.app/'
+                href: 'https://eonet-tracker.netlify.app/'
             }
         ],
     },
     {
-        title: 'Project 2',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-        imageUrl: 'https://source.unsplash.com/random/400x300',
-        tags: ['react', 'javascript', 'html', 'css'],
+        title: 'Path Finder',
+        description: 'Web App to showcase the visualization of path finding algorithms. Implements Dijkstra’s algorithm and A* best-first search algorithm in JavaScript to find the shortest path from the start node to target node.',
+        imageUrl: '/pathfinder.png',
+        tags: ['React', 'JavaScript', 'CSS', 'Algorithms', 'Dijkstra', 'A*'],
         links: [
             {
                 icon: GitHubIcon,
-                href: 'https://github.com/anthony-magana'
+                href: 'https://github.com/anthony-magana/PathFinder'
             },
             {
                 icon: OpenInNewIcon,
-                href: 'https://anthonymagana.netlify.app/'
+                href: 'https://pathfindervisual.netlify.app/'
             }
         ],
     },
     {
-        title: 'Project 3',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-        imageUrl: 'https://source.unsplash.com/random/400x300',
-        tags: ['react', 'javascript', 'html', 'css'],
+        title: 'Vehicle Rentals',
+        description: 'Cross-platform mobile application built with React-Native and expo-cli while implementing Redux for some global state management. Implements firebase for handling User Authentication as well as its users data to simulate a real-world vehicle marketplace.',
+        imageUrl: '/rentals.png',
+        tags: ['React Native', 'FireBase', 'FireStore', 'Redux', 'Google Maps API'],
         links: [
             {
                 icon: GitHubIcon,
-                href: 'https://github.com/anthony-magana'
+                href: 'https://github.com/anthony-magana/PathFinder'
             },
-            {
-                icon: OpenInNewIcon,
-                href: 'https://anthonymagana.netlify.app/'
-            }
         ],
     },
 ]
