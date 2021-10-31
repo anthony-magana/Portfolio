@@ -41,7 +41,7 @@ const TagsContainer = ({tags}) => {
     )
 }
 
-function Project({ title, description, imageUrl, tags, links }) {
+const Project = ({ title, description, imageUrl, tags, links }) => {
     const styles = useStyles();
     return (
       <Grid item>
@@ -61,7 +61,7 @@ function Project({ title, description, imageUrl, tags, links }) {
             <CardActions>
               <div className={styles.links}>
                 {links.map((linkItem, index) => (
-                  <IconButton href={linkItem.href} key={index}>
+                  <IconButton href={linkItem.href} key={index} target="_blank" rel="noreferrer">
                     <linkItem.icon />
                   </IconButton>
                 ))}
@@ -77,12 +77,12 @@ function Project({ title, description, imageUrl, tags, links }) {
         </Card>
       </Grid>
     );
-  }
+}
 
 export default function Projects() {
     return (
-        <Container maxWidth="md">
-            <Box mt={6} mb={2}>
+        <Container maxWidth="md" id="projects">
+            <Box pt={8} mb={2}>
                 <Typography variant="h4">Projects</Typography>
             </Box>
             <Grid container direction="column" spacing={4}>
@@ -103,7 +103,7 @@ const projectData = [
         links: [
             {
                 icon: GitHubIcon,
-                href: 'https://wwww.github.com/anthony-magana/'
+                href: 'https://github.com/anthony-magana'
             },
             {
                 icon: OpenInNewIcon,
@@ -119,7 +119,7 @@ const projectData = [
         links: [
             {
                 icon: GitHubIcon,
-                href: 'https://wwww.github.com/anthony-magana/'
+                href: 'https://github.com/anthony-magana'
             },
             {
                 icon: OpenInNewIcon,
@@ -135,7 +135,7 @@ const projectData = [
         links: [
             {
                 icon: GitHubIcon,
-                href: 'https://wwww.github.com/anthony-magana/'
+                href: 'https://github.com/anthony-magana'
             },
             {
                 icon: OpenInNewIcon,

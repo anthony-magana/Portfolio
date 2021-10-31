@@ -18,7 +18,7 @@ import CodeIcon from '@material-ui/icons/Code';
 const navigationLinks = [
     {name: 'About', href: '#about'},
     {name: 'Projects', href: '#projects'},
-    {name: 'Resume', href: ''}
+    {name: 'Resume', href: '/resume.pdf'}
 ]
 
 const useStyles = makeStyles(theme => ({
@@ -48,6 +48,20 @@ export default function Header() {
                     </Avatar>
                     <Hidden xsDown>
                         {navigationLinks.map((item, index) => (
+                            // open resume in new tab if href is a pdf
+                            item.name === 'Resume' ? 
+                            <Link 
+                                className={styles.link}
+                                key={index} 
+                                href={item.href} 
+                                color="textPrimary" 
+                                variant="button"
+                                underline="none"
+                                target="_blank"
+                            >
+                                {item.name}
+                            </Link>
+                            :
                             <Link 
                                 className={styles.link}
                                 key={index} 

@@ -13,7 +13,7 @@ import {StaticImage} from 'gatsby-plugin-image';
 
 const useStyles = makeStyles(theme => ({
     section: {
-        height: '95vh',
+        height: '92vh',
         position: 'relative',
     },
     container: {
@@ -46,7 +46,7 @@ export default function HeroSection() {
         setShouldShow(true);
     }, []);
     return (
-        <Paper className={styles.section}>
+        <Paper className={styles.section} id="about">
             <StaticImage className={styles.heroImage} src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2117&q=80" alt="Mountains image banner" />
             <div className={styles.overlay}></div>
             <Container className={styles.container} maxWidth="md">
