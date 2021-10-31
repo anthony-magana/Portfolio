@@ -1,16 +1,14 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { createTheme, ThemeProvider, responsiveFontSizes } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-// import Switch from '@material-ui/core/Switch';
 import HeroSection from '../components/HeroSection';
 import Header from '../components/Header';
 import Projects from '../components/Projects';
 
 export default function IndexPage() {
-  const [darkMode, setDarkMode] = useState(true);
   let darkTheme = createTheme({
     palette: {
-      type: darkMode ? 'dark' : 'light',
+      type: 'dark',
     },
   });
   darkTheme = responsiveFontSizes(darkTheme);
@@ -20,7 +18,6 @@ export default function IndexPage() {
       <Header/>
       <HeroSection />
       <Projects />
-      {/* <Switch checked={darkMode} onChange={() => setDarkMode(!darkMode)} /> */}
     </ThemeProvider>
   )
 }

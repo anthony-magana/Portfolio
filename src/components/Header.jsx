@@ -24,6 +24,9 @@ const navigationLinks = [
 const useStyles = makeStyles(theme => ({
     link: {
         marginRight: 20,
+        '&:hover': {
+            color: '#f50057',
+        }
     },
     avatar: {
         marginRight: 'auto',
