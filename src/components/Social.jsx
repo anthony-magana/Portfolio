@@ -16,8 +16,8 @@ export default function Social({direction}) {
     return (
         <Grid container direction={direction || "row"} spacing={1}>
             {socialIcons.map((item, index) => (
-            <Grid item>
-                <Link href={item.url} target="_blank" rel="noopener noreferrer" key={index}>
+            <Grid key={index} item>
+                <Link href={item.url} target="_blank" rel="noopener noreferrer">
                     <IconButton>
                         <item.icon />
                     </IconButton>

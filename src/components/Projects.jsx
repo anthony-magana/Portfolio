@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     },
     cardContnent: {
         width: '65%',
+    },
+    smallScreen: {
+        width: '150%',
     }
 }));
 
@@ -54,11 +57,20 @@ const Project = ({ title, description, imageUrl, tags, links }) => {
               <Typography variant="h5" paragraph>
                 {title}
               </Typography>
-              <Typography variant="subtitle1" paragraph>
-                {description}
-              </Typography>
+              {/* shows for desktop screens */}
+              <Hidden xsDown>
+                <Typography variant="subtitle1" paragraph>
+                    {description}
+                </Typography>
+              </Hidden>
+              {/* shows for mobile screens */}
+              <Hidden smUp>
+                <Typography className={styles.smallScreen} variant="subtitle1" paragraph>
+                    {description}
+                </Typography>
+              </Hidden>
               <Hidden mdUp>
-                <TagsContainer tags={tags} />
+                  <TagsContainer tags={tags} />
               </Hidden>
             </CardContent>
             <CardActions>
