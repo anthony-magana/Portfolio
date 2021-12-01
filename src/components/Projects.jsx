@@ -154,4 +154,20 @@ const projectData = [
             },
         ],
     },
+    {
+        title: 'MOD ENT',
+        description: 'Single page web application designed for an eCommerce business that lets you shop and checkout securely with stripe.',
+        imageUrl: '/mod-ent.png',
+        tags: ['React', 'Commerce.js', 'Material-UI', 'Stripe.js'],
+        links: [
+            {
+                icon: GitHubIcon,
+                href: 'https://github.com/anthony-magana/Web-Store'
+            },
+            {
+                icon: OpenInNewIcon,
+                href: 'https://mod-ent.netlify.app'
+            }
+        ],
+    },
 ]
