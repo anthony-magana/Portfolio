@@ -51,7 +51,7 @@ export default function HeroSection() {
             <div className={styles.overlay}></div>
             <Container className={styles.container} maxWidth="md">
                 <Grid className={styles.content} container justifyContent="space-between" alignItems="center">
-                    <Zoom in={shouldShow} timeout={800}>
+                    <Zoom in={shouldShow} timeout={2000}>
                         <Grid item sm={8}>
                             <Typography component="h1" variant="h2">Anthony Magana</Typography>
                             <Typography component="h2" variant="h4" style={{paddingTop: 5, paddingBottom: 10}}>Software Developer</Typography>
