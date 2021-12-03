@@ -170,4 +170,20 @@ const projectData = [
             }
         ],
     },
+    {
+        title: 'Movie Search',
+        description: 'Single page web application designed for a movie search engine that allows users to search for movies, tv shows, and view its content with an option to save your favorites. (Currently in development)',
+        imageUrl: '/movie-search.png',
+        tags: ['React', 'Firebase/Firestore', 'Material-UI', 'IMDB API', 'User Authentication'],
+        links: [
+            {
+                icon: GitHubIcon,
+                href: 'https://github.com/joeyishere/Comp484'
+            },
+            {
+                icon: OpenInNewIcon,
+                href: 'https://484-movie-search.netlify.app'
+            }
+        ],
+    },
 ]
