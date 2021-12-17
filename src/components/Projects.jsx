@@ -171,8 +171,8 @@ const projectData = [
         ],
     },
     {
-        title: 'Movie Search',
-        description: 'Single page web application designed for a movie search engine that allows users to search for movies, tv shows, and view its content with an option to save your favorites. (Currently in development)',
+        title: 'The Watchlist',
+        description: 'Single page web application designed for a movie search engine that allows users to search for movies, tv shows, and view its content with the option to save your favorites.',
         imageUrl: '/movie-search.png',
         tags: ['React', 'Firebase/Firestore', 'Material-UI', 'IMDB API', 'User Authentication'],
         links: [
@@ -182,7 +182,7 @@ const projectData = [
             },
             {
                 icon: OpenInNewIcon,
-                href: 'https://484-movie-search.netlify.app'
+                href: 'https://the-watch-list.netlify.app'
             }
         ],
     },
