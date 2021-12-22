@@ -186,4 +186,20 @@ const projectData = [
             }
         ],
     },
+    {
+        title: 'Jobs Jet',
+        description: 'Jobs Jet is the all in one platform for finding a job or for hiring talent. Swipe left or right to determine if you the employer or the talent are a match (currently in development).',
+        imageUrl: '/jobsjet.png',
+        tags: ['Nextjs', 'MongoDB', 'Chakra UI', 'Auth0', 'User Authentication'],
+        links: [
+            {
+                icon: GitHubIcon,
+                href: 'https://github.com/anthony-magana/JobsJet'
+            },
+            {
+                icon: OpenInNewIcon,
+                href: 'https://jobs-jet.vercel.app/'
+            }
+        ],
+    },
 ]
