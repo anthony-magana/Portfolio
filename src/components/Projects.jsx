@@ -143,22 +143,6 @@ const projectData = [
         ],
     },
     {
-        title: 'MOD ENT',
-        description: 'Single page web application designed for an eCommerce business that lets you shop and checkout securely with stripe.',
-        imageUrl: '/mod-ent.png',
-        tags: ['React', 'Commerce.js', 'Material-UI', 'Stripe.js'],
-        links: [
-            {
-                icon: GitHubIcon,
-                href: 'https://github.com/anthony-magana/Web-Store'
-            },
-            {
-                icon: OpenInNewIcon,
-                href: 'https://mod-ent.netlify.app'
-            }
-        ],
-    },
-    {
         title: 'Jobs Jet',
         description: 'Jobs Jet is the all in one platform for finding a job or for hiring talent. Swipe left or right to determine if you the employer or the talent are a match (currently in development).',
         imageUrl: '/jobsjet.png',
@@ -171,6 +155,22 @@ const projectData = [
             {
                 icon: OpenInNewIcon,
                 href: 'https://jobs-jet.vercel.app/'
+            }
+        ],
+    },
+    {
+        title: 'MOD ENT',
+        description: 'Single page web application designed for an eCommerce business that lets you shop and checkout securely with stripe.',
+        imageUrl: '/mod-ent.png',
+        tags: ['React', 'Commerce.js', 'Material-UI', 'Stripe.js'],
+        links: [
+            {
+                icon: GitHubIcon,
+                href: 'https://github.com/anthony-magana/Web-Store'
+            },
+            {
+                icon: OpenInNewIcon,
+                href: 'https://mod-ent.netlify.app'
             }
         ],
     },
