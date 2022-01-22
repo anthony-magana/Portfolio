@@ -143,18 +143,6 @@ const projectData = [
         ],
     },
     {
-        title: 'Vehicle Rentals',
-        description: 'Cross-platform mobile application built with React-Native and expo-cli while implementing Redux for some global state management. Implements firebase for handling User Authentication as well as its users data to simulate a real-world vehicle marketplace.',
-        imageUrl: '/rentals.png',
-        tags: ['React Native', 'FireBase', 'FireStore', 'Redux', 'Google Maps API'],
-        links: [
-            {
-                icon: GitHubIcon,
-                href: 'https://github.com/anthony-magana/PathFinder'
-            },
-        ],
-    },
-    {
         title: 'MOD ENT',
         description: 'Single page web application designed for an eCommerce business that lets you shop and checkout securely with stripe.',
         imageUrl: '/mod-ent.png',
@@ -171,22 +159,6 @@ const projectData = [
         ],
     },
     {
-        title: 'The Watchlist',
-        description: 'Single page web application designed for a movie search engine that allows users to search for movies, tv shows, and view its content with the option to save your favorites.',
-        imageUrl: '/movie-search.png',
-        tags: ['React', 'Firebase/Firestore', 'Material-UI', 'IMDB API', 'User Authentication'],
-        links: [
-            {
-                icon: GitHubIcon,
-                href: 'https://github.com/joeyishere/Comp484'
-            },
-            {
-                icon: OpenInNewIcon,
-                href: 'https://the-watch-list.netlify.app'
-            }
-        ],
-    },
-    {
         title: 'Jobs Jet',
         description: 'Jobs Jet is the all in one platform for finding a job or for hiring talent. Swipe left or right to determine if you the employer or the talent are a match (currently in development).',
         imageUrl: '/jobsjet.png',
@@ -199,6 +171,22 @@ const projectData = [
             {
                 icon: OpenInNewIcon,
                 href: 'https://jobs-jet.vercel.app/'
+            }
+        ],
+    },
+    {
+        title: 'The Watchlist',
+        description: 'Single page web application designed for a movie search engine that allows users to search for movies, tv shows, and view its content with the option to save your favorites.',
+        imageUrl: '/movie-search.png',
+        tags: ['React', 'Firebase/Firestore', 'Material-UI', 'IMDB API', 'User Authentication'],
+        links: [
+            {
+                icon: GitHubIcon,
+                href: 'https://github.com/joeyishere/Comp484'
+            },
+            {
+                icon: OpenInNewIcon,
+                href: 'https://the-watch-list.netlify.app'
             }
         ],
     },
